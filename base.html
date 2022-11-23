@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css_final.css">
+    
+    <script src="./filter.js"></script>
+    
+    <!-- <link rel="stylesheet" href="./css-1.css"> -->
+    <title>Fixed table</title>
+</head>
+
+<body>
+    
+    <div class="outer-wrapper">
+    <div class="table-wrapper">
+    <table id="emp-table">
+        <thead>
+           
+            <th col-index = 1>books
+                <select class="table-filter" onchange="filter_rows()">
+                    <option value="all"></option>
+                </select>
+            </th>
+
+            <th col-index = 2>author
+                <select class="table-filter" onchange="filter_rows()">
+                    <option value="all"></option>
+                </select>
+            </th>
+            <th col-index = 3>publications
+                <select class="table-filter" onchange="filter_rows()">
+                    <option value="all"></option>
+                </select>
+            </th>
+            <th col-index = 4>pulished year
+                <select class="table-filter" onchange="filter_rows()">
+                    <option value="all"></option>
+                </select>
+            </th>
+            
+        </thead>
+        <tbody>
+<tr>
+<td>web application</td>
+<td>Fyodor Dostoevsky</td> 
+<td>arihant</td>
+<td>1899</td>
+
+ </tr>
+<tr>
+    <td>database management system</td>
+    <td>Dante Alighieri</td> 
+    <td>sigma</td>
+    <td>1918</td>
+    
+ </tr>
+<tr>
+     <td>database management system</td>
+     <td>Abrahman</td> 
+     <td>cingage</td>
+     <td>1918</td>
+     
+</tr>
+<tr>
+      <td>web application</td>
+      <td> Lev Tolstoy</td> 
+      <td>arihant</td>
+      <td>2000</td>
+      
+</tr>
+<tr>
+    <td>cloud computing</td>
+    <td>ruchin jain</td> 
+    <td>phi publications</td>
+    <td>1899</td>
+    
+</tr>
+<tr>
+    <td>economics</td>
+    <td>Abrahman</td> 
+    <td>sigma</td>
+    <td>1918</td>
+    
+</tr>
+<tr>
+    <td>web application</td>
+    <td> Lev Tolstoy</td> 
+    <td>sigma</td>
+    <td>1899</td>
+    
+</tr>
+<tr>
+    <td>cryptography system</td>
+    <td>Abrahman</td> 
+    <td>phi publications</td>
+    <td>1975</td>
+    
+</tr>
+<tr>
+    <td>cryptography system</td>
+    <td>Herbert</td> 
+    <td>pearson</td>
+    <td>1975</td>
+    
+</tr>
+<tr>
+    <td>cloud computing</td>
+    <td>Fyodor Dostoevsky</td> 
+    <td>cingage</td>
+    <td>1899</td>
+    
+</tr>
+<tr>
+    <td>economics</td>
+    <td>Abrahman</td> 
+    <td>pearson</td>
+    <td>1945</td>
+    
+</tr>
+<tr>
+    <td>cloud computing</td>
+    <td>Fyodor Dostoevsky</td> 
+    <td>pearson</td>
+    <td>1945</td>
+    
+</tr>
+<tr>
+    <td>cloud computing</td>
+    <td>Herbert</td> 
+    <td>arihant</td>
+    <td>1945</td>
+    
+</tr>
+<tr>
+    <td>economics</td>
+    <td>sudarshan</td> 
+    <td>cingage</td>
+    <td>2000</td>
+    
+</tr>
+<tr>
+    <td>economics</td>
+    <td>Herbert</td> 
+    <td>phi publications</td>
+    <td>1899</td>
+    
+</tr>
+<tr>
+    <td>cryptography system</td>
+    <td>Fyodor Dostoevsky</td> 
+    <td>Willey</td>
+    <td>1975</td>
+    
+</tr>
+<tr>
+    <td>information security</td>
+    <td>piterson</td> 
+    <td>cingage</td>
+    <td>1871</td>
+    
+</tr>
+<tr>
+    <td>information security</td>
+    <td>Herbert</td> 
+    <td>Willey</td>
+    <td>1899</td>
+    
+</tr>
+<tr>
+    <td>database management system</td>
+    <td>ruchin jain</td> 
+    <td>Willey</td>
+    <td>1998</td>
+    
+</tr>
+<tr>
+    <td>web application</td>
+    <td>ruchin jain</td> 
+    <td>Willey</td>
+    <td>2000</td>
+    
+</tr>
+    
+                          
+                
+            
+</tbody>
+ </body>
+
+ </html>
+
+
+        </tbody>
+    </table>
+    <!-- <script>getUniqueValuesFromColumn()
+    </script> -->
+    <script>
+        window.onload = () => {
+            console.log(document.querySelector("#emp-table > tbody > tr:nth-child(1) > td:nth-child(2) ").innerHTML);
+        };
+
+        getUniqueValuesFromColumn()
+        
+    </script>
+</div>
+</div>
+</body>
+
+</html>
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
